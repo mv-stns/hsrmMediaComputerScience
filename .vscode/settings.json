@@ -12,5 +12,11 @@
       }
   ],
   "liveSassCompile.settings.generateMap": true,
-  "liveSassCompile.settings.autoprefix": ["defaults"]
+  "liveSassCompile.settings.autoprefix": ["defaults"],
+  "liveSassCompile.settings.excludeList": [
+    "/**/node_modules/**",
+    "/.vscode/**",
+    "/**/*.test.scss",
+    "/**/_*.scss"
+  ]
 }
