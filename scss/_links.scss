@@ -1,0 +1,9 @@
+@import "./_colors.scss";
+@import "./_typography.scss";
+
+a[href="#"] {
+  @extend .text-primary, .no-decoration;
+  &:hover {
+    color: darken($primary, 15%);
+  }
+};

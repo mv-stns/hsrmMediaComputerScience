@@ -1,0 +1,222 @@
+@import "sizes";
+@import "mixins";
+@import "colors";
+
+$hsrmSmallLINK: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMSIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDIyIDIxIj48cGF0aCBmaWxsPSIjRTMwNjEzIiBkPSJtMjAuOTI0IDEwLjA0Mi0uNTYtLjk3YS43NTcuNzU3IDAgMCAwLS42NDEtLjM2OGgtNy42MWwxLjIyOC0yLjEyN2EuNzU3Ljc1NyAwIDAgMCAuMDA2LS43MzNsLS41NjItLjk3NGEuNzQ4Ljc0OCAwIDAgMC0uNzA1LS40MDhoLTEuMTJhLjc1NS43NTUgMCAwIDAtLjYzNy4zNzJMOS4wOTMgNi45NiA1LjI5Mi4zNzN2LjAwMkEuNzU0Ljc1NCAwIDAgMCA0LjY2MSAwSDMuNTM0YS43NjUuNzY1IDAgMCAwLS43MDYuNDA0bC0uNTYuOTczYS43NjEuNzYxIDAgMCAwIC4wMDMuNzM3bDMuODA1IDYuNTg5SDEuMzIxYS43NTguNzU4IDAgMCAwLS42NDEuMzY3bC0uNTYuOTdhLjc0Ni43NDYgMCAwIDAgLjAwMi44MTNsLjU2Ljk3NmEuNzYuNzYgMCAwIDAgLjY0LjM2di4wMDFoNC43NTRsLTMuODAzIDYuNTlhLjc0OC43NDggMCAwIDAtLjAwNS43MzVsLjU2Ljk3NGEuNzk1Ljc5NSAwIDAgMCAuMjkzLjMwNWMuMTMuMDc0LjI3My4xMDUuNDEzLjFoMS4xMjdhLjc1OC43NTggMCAwIDAgLjYzLS4zNzRsMy44MDMtNi41ODYgMS4yMyAyLjEyN2EuNzU4Ljc1OCAwIDAgMCAuNjM2LjM3MWgxLjEyMmEuNzMyLjczMiAwIDAgMCAuNDExLS4xMDEuNzM3LjczNyAwIDAgMCAuMjkzLS4zMDdsLjU2Mi0uOTcyYS43NTguNzU4IDAgMCAwLS4wMDctLjczNWwtMS4yMjctMi4xMjdoNy42MDl2LS4wMDJhLjc1OS43NTkgMCAwIDAgLjYzNy0uMzU5bC41NjItLjk3NWEuNzQ2Ljc0NiAwIDAgMCAuMDAyLS44MTNaIi8+PC9zdmc+);
+
+$fontBase: (
+  family: 'Flama',
+  weights: (
+    light: 300,
+    regular: 400,
+    bold: 700,
+    black: 900
+  ),
+  styles: (
+    normal: normal,
+    italic: italic
+  ),
+  path: '/assets/fonts/'
+);
+
+@each $weight, $weightValue in map-get($fontBase, weights) {
+    @each $style, $styleValue in map-get($fontBase, styles) {
+        @if $style == 'normal' {
+            @font-face {
+                font-family: map-get($fontBase, family);
+                font-weight: $weightValue;
+                src: url(map-get($fontBase, path) + to-lower-case(map-get($fontBase, family)) + '-' + $weight + '.otf') format('opentype');
+            }
+        } @else {
+            @font-face {
+                font-family: map-get($fontBase, family);
+                font-weight: $weightValue;
+                font-style: $styleValue;
+                src: url(map-get($fontBase, path) + to-lower-case(map-get($fontBase, family)) + '-' + $weight + '-' + $style + '.otf') format('opentype');
+            }
+        }
+    }
+}
+
+$fontSizes: (
+  'xs' : (
+    'size': 0.75rem,
+    'line-height': 1rem
+  ),
+  'sm' : (
+    'size': 0.875rem,
+    'line-height': 1.25rem
+  ),
+  'base' : (
+    'size': 1rem,
+    'line-height': 1.5rem
+  ),
+  'lg' : (
+    'size': 1.125rem,
+    'line-height': 1.75rem
+  ),
+  'xl' : (
+    'size': 1.25rem,
+    'line-height': 1.75rem
+  ),
+  '2xl' : (
+    'size': 1.5rem,
+    'line-height': 2rem
+  ),
+  '3xl' : (
+    'size': 1.875rem,
+    'line-height': 2.25rem
+  ),
+  '4xl' : (
+    'size': 2.25rem,
+    'line-height': 2.5rem
+  ),
+  '5xl' : (
+    'size': 3rem,
+    'line-height': 1
+  ),
+  '6xl' : (
+    'size': 3.75rem,
+    'line-height': 1
+  ),
+  '7xl' : (
+    'size': 4.5rem,
+    'line-height': 1
+  ),
+  '8xl' : (
+    'size': 6rem,
+    'line-height': 1
+  ),
+  '9xl' : (
+    'size': 8rem,
+    'line-height': 1
+  )
+);
+
+@each $size, $sizeValue in $fontSizes {
+  .text-#{$size} {
+    font-size: map-get($sizeValue, size);
+    line-height: map-get($sizeValue, line-height);
+  }
+}
+
+body {
+  font-family: "Flama", sans-serif;
+}
+
+.no-decoration {
+  text-decoration: none!important;
+  list-style: none!important;
+}
+
+@mixin hsrm-logo {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-image: $hsrmSmallLINK;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &::before {
+    @include hsrm-logo;
+  }
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+h1 {
+  @include respond-to('sm') {
+    font-size: 1.6875rem;
+  }
+  @include respond-to('md') {
+    font-size: 2.25rem;
+  }
+  @include respond-to('lg') {
+    font-size: 2.8125rem;
+  }
+  @include respond-to('xl') {
+    font-size: 3.375rem;
+  }
+}
+
+h2 {
+  @include respond-to('sm') {
+    font-size: 1.125rem;
+  }
+  @include respond-to('md') {
+    font-size: 1.40625rem;
+  }
+  @include respond-to('lg') {
+    font-size: 1.6875rem;
+  }
+  @include respond-to('xl') {
+    font-size: 2.25rem;
+  }
+}
+
+h3 {
+  @include respond-to('sm') {
+    font-size: 0.84375rem;
+  }
+  @include respond-to('md') {
+    font-size: 1.125rem;
+  }
+  @include respond-to('lg') {
+    font-size: 1.40625rem;
+  }
+  @include respond-to('xl') {
+    font-size: 1.6875rem;
+  }
+}
+
+h4 {
+  @include respond-to('sm') {
+    font-size: 0.65625rem;
+  }
+  @include respond-to('md') {
+    font-size: 0.84375rem;
+  }
+  @include respond-to('lg') {
+    font-size: 1.125rem;
+  }
+  @include respond-to('xl') {
+    font-size: 1.40625rem;
+  }
+}
+
+h5 {
+  @include respond-to('sm') {
+    font-size: 0.5625rem;
+  }
+  @include respond-to('md') {
+    font-size: 0.65625rem;
+  }
+  @include respond-to('lg') {
+    font-size: 0.84375rem;
+  }
+  @include respond-to('xl') {
+    font-size: 1.125rem;
+  }
+}
+
+h6 {
+  @include respond-to('sm') {
+    font-size: 0.5625rem;
+  }
+  @include respond-to('md') {
+    font-size: 0.5625rem;
+  }
+  @include respond-to('lg') {
+    font-size: 0.65625rem;
+  }
+  @include respond-to('xl') {
+    font-size: 0.84375rem;
+  }
+}
+

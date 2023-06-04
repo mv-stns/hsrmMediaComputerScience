@@ -1,0 +1,144 @@
+$displayTypes: (
+  flex,
+  inline-flex,
+  block,
+  inline-block,
+  inline,
+  none,
+);
+
+@import './_mixins.scss';
+
+@each $display in $displayTypes {
+  .#{$display} {
+    display: $display;
+  }
+
+  // should look like this: .#{$breakpointName}\:#{$display}
+  @each $bpName, $bpValue in $breakpoints {
+    .#{$bpName}\:#{$display} {
+      @include respond-to($bpName) {
+        display: $display;
+      }
+    }
+  }
+}
+
+$flexDirections: (
+  row,
+  row-reverse,
+  column,
+  column-reverse,
+);
+
+$flexWrap: (
+  wrap,
+  nowrap,
+  wrap-reverse,
+);
+
+$justifyContent: (
+  flex-start,
+  flex-end,
+  center,
+  space-between,
+  space-around,
+  space-evenly,
+);
+
+$alignItems: (
+  stretch,
+  flex-start,
+  flex-end,
+  center,
+  baseline,
+);
+
+$alignContent: (
+  stretch,
+  flex-start,
+  flex-end,
+  center,
+  space-between,
+  space-around,
+);
+
+$alignSelf: (
+  auto,
+  stretch,
+  flex-start,
+  flex-end,
+  center,
+  baseline,
+);
+
+@each $flexDirection in $flexDirections {
+  .flex\:#{$flexDirection} {
+    display: flex;
+    flex-direction: $flexDirection;
+  }
+
+  @each $bpName, $bpValue in $breakpoints {
+    .#{$bpName}\:flex\:#{$flexDirection} {
+      @include respond-to($bpName) {
+        display: flex;
+        flex-direction: $flexDirection;
+      }
+    }
+  }
+}
+
+@each $flexWrap in $flexWrap {
+  .flex-wrap\:#{$flexWrap} {
+    flex-wrap: $flexWrap;
+  }
+
+  @each $bpName, $bpValue in $breakpoints {
+    .#{$bpName}\:flex-wrap\:#{$flexWrap} {
+      @include respond-to($bpName) {
+        flex-wrap: $flexWrap;
+      }
+    }
+  }
+}
+
+@each $justifyContent in $justifyContent {
+  .content-#{$justifyContent} {
+    justify-content: $justifyContent;
+  }
+
+  @each $bpName, $bpValue in $breakpoints {
+    .#{$bpName}\:content-#{$justifyContent} {
+      @include respond-to($bpName) {
+        justify-content: $justifyContent;
+      }
+    }
+  }
+}
+
+@each $alignItems in $alignItems {
+  .items-#{$alignItems} {
+    align-items: $alignItems;
+  }
+
+  @each $bpName, $bpValue in $breakpoints {
+    .#{$bpName}\:items-#{$alignItems} {
+      @include respond-to($bpName) {
+        align-items: $alignItems;
+      }
+    }
+  }
+}
+@each $alignSelf in $alignSelf {
+  .self-#{$alignSelf} {
+    align-self: $alignSelf;
+  }
+
+  @each $bpName, $bpValue in $breakpoints {
+    .#{$bpName}\:self-#{$alignSelf} {
+      @include respond-to($bpName) {
+        align-self: $alignSelf;
+      }
+    }
+  }
+}

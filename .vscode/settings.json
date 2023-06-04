@@ -1,22 +1,32 @@
 {
   "liveSassCompile.settings.formats": [
       {
-          "format": "expanded",
-          "extensionName": ".css",
-          "savePath": "/css"
-      },
-      {
           "extensionName": ".min.css",
           "format": "compressed",
-          "savePath": "/css"
+          "savePath": "~/../css"
+      },
+      {
+          "extensionName": ".css",
+          "format": "expanded",
+          "savePath": "~/../css"
       }
   ],
-  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.generateMap": false,
   "liveSassCompile.settings.autoprefix": ["defaults"],
   "liveSassCompile.settings.excludeList": [
     "/**/node_modules/**",
     "/.vscode/**",
     "/**/*.test.scss",
-    "/**/_*.scss"
+    "/scss/_*.scss",
   ],
+  "liveSassCompile.settings.compileOnWatch": true,
+  "liveSassCompile.settings.partialsList": [
+    "/scss/_*.sass",
+    "/scss/_*.scss",
+  ],
+  "liveSassCompile.settings.forceBaseDirectory": "/scss",
+  "liveSassCompile.settings.useNewCompiler": true,
+  "liveSassCompile.settings.watchOnLaunch": false,
+  "liveSassCompile.settings.showOutputWindowOn": "Error",
+  "liveSassCompile.settings.rootIsWorkspace": true,
 }

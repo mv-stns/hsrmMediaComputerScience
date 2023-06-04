@@ -1,0 +1,57 @@
+$sizes: ();
+@for $i from 1 through 96 {
+  $sizes: map-merge($sizes, ('#{$i}': #{$i * 0.25}rem));
+}
+$sizes: map-merge($sizes, ('full': 100%));
+$sizes: map-merge($sizes, ('auto': auto));
+
+$directions: (
+  't': top,
+  'r': right,
+  'b': bottom,
+  'l': left,
+  'x': null,
+  'y': null
+);
+
+@each $sizeName, $sizeVal in $sizes {
+  .w-#{$sizeName} {
+    width: $sizeVal;
+  }
+  .h-#{$sizeName} {
+    height: $sizeVal;
+  }
+}
+
+@each $sizeName, $sizeValue in $sizes {
+  .p-#{$sizeName} {
+    padding: $sizeValue;
+  }
+  .m-#{$sizeName} {
+    margin: $sizeValue;
+  }
+  @each $directionName, $directionValue in $directions {
+    .p#{$directionName}-#{$sizeName} {
+      @if $directionName == 'x' {
+        padding-left: $sizeValue;
+        padding-right: $sizeValue;
+      } @else if $directionName == 'y' {
+        padding-top: $sizeValue;
+        padding-bottom: $sizeValue;
+      } @else {
+        padding-#{$directionValue}: $sizeValue;
+      }
+    }
+    .m#{$directionName}-#{$sizeName} {
+      @if $directionName == 'x' {
+        margin-left: $sizeValue;
+        margin-right: $sizeValue;
+      } @else if $directionName == 'y' {
+        margin-top: $sizeValue;
+        margin-bottom: $sizeValue;
+      } @else {
+        margin-#{$directionValue}: $sizeValue;
+      }
+    }
+  }
+}
