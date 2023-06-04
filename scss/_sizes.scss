@@ -1,56 +1,153 @@
+@import "mixins";
+
 $sizes: ();
+
 @for $i from 1 through 96 {
-  $sizes: map-merge($sizes, ('#{$i}': #{$i * 0.25}rem));
+  $sizes: map-merge(
+    $sizes,
+    (
+      "#{$i}": #{$i * 0.25}rem,
+    )
+  );
 }
-$sizes: map-merge($sizes, ('full': 100%));
-$sizes: map-merge($sizes, ('auto': auto));
+
+$sizes: map-merge(
+  $sizes,
+  (
+    "full": 100%,
+  )
+);
+$sizes: map-merge(
+  $sizes,
+  (
+    "auto": auto,
+  )
+);
 
 $directions: (
-  't': top,
-  'r': right,
-  'b': bottom,
-  'l': left,
-  'x': null,
-  'y': null
+  "t": top,
+  "r": right,
+  "b": bottom,
+  "l": left,
+  "x": null,
+  "y": null,
 );
 
 @each $sizeName, $sizeVal in $sizes {
   .w-#{$sizeName} {
     width: $sizeVal;
   }
+
   .h-#{$sizeName} {
     height: $sizeVal;
   }
 }
 
 @each $sizeName, $sizeValue in $sizes {
+  .gap-#{$sizeName} {
+    gap: $sizeValue;
+  }
+
+  .gap-x-#{$sizeName} {
+    column-gap: $sizeValue;
+  }
+
+  .gap-y-#{$sizeName} {
+    row-gap: $sizeValue;
+  }
+
   .p-#{$sizeName} {
     padding: $sizeValue;
   }
+
   .m-#{$sizeName} {
     margin: $sizeValue;
   }
+
   @each $directionName, $directionValue in $directions {
     .p#{$directionName}-#{$sizeName} {
-      @if $directionName == 'x' {
+      @if $directionName== "x" {
         padding-left: $sizeValue;
         padding-right: $sizeValue;
-      } @else if $directionName == 'y' {
+      } @else if $directionName== "y" {
         padding-top: $sizeValue;
         padding-bottom: $sizeValue;
       } @else {
         padding-#{$directionValue}: $sizeValue;
       }
     }
+
     .m#{$directionName}-#{$sizeName} {
-      @if $directionName == 'x' {
+      @if $directionName== "x" {
         margin-left: $sizeValue;
         margin-right: $sizeValue;
-      } @else if $directionName == 'y' {
+      } @else if $directionName== "y" {
         margin-top: $sizeValue;
         margin-bottom: $sizeValue;
       } @else {
         margin-#{$directionValue}: $sizeValue;
+      }
+    }
+
+    @each $bpName, $bpVal in $breakpoints {
+      .#{$bpName}\:gap-#{$sizeName} {
+        @include respond-to($bpName) {
+          gap: $sizeValue;
+        }
+      }
+
+      .#{$bpName}\:gap-x-#{$sizeName} {
+        @include respond-to($bpName) {
+          column-gap: $sizeValue;
+        }
+      }
+
+      .#{$bpName}\:gap-y-#{$sizeName} {
+        @include respond-to($bpName) {
+          row-gap: $sizeValue;
+        }
+      }
+
+      .#{$bpName}\:p-#{$sizeName} {
+        @include respond-to($bpName) {
+          padding: $sizeValue;
+        }
+      }
+
+      .#{$bpName}\:m-#{$sizeName} {
+        @include respond-to($bpName) {
+          margin: $sizeValue;
+        }
+      }
+
+      @each $directionName, $directionValue in $directions {
+        .#{$bpName}\:p#{$directionName}-#{$sizeName} {
+          @include respond-to($bpName) {
+            @if $directionName== "x" {
+              padding-left: $sizeValue;
+              padding-right: $sizeValue;
+            } @else if $directionName== "y" {
+              padding-top: $sizeValue;
+              padding-bottom: $sizeValue;
+            } @else {
+              padding-#{$directionValue}: $sizeValue;
+            }
+          }
+        }
+
+        .#{$bpName}\:m#{$directionName}-#{$sizeName} {
+          @include respond-to($bpName) {
+            @if $directionName== "x" {
+              margin-left: $sizeValue;
+              margin-right: $sizeValue;
+            } @else if $directionName== "y" {
+              margin-top: $sizeValue;
+              margin-bottom: $sizeValue;
+            } @else {
+              margin-#{$directionValue}: $sizeValue;
+            }
+          }
+        }
       }
     }
   }

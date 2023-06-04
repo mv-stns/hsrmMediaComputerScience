@@ -2,7 +2,7 @@
 
 Erstellen Sie eine Single-Web-Page mit wichtigen Informationen und Terminen für ihr Studium. Darin sollen folgende Themen/Topics vorkommen:
 
--  [ ] Was ist Medieninformatik
+-  [x] Was ist Medieninformatik
 -  [ ] Start/Ende der Vorlesungen, Klausurenphase für das SS23
 -  [ ] Klausurtermine (falls noch nicht bekannt, denken Sie sich Termine aus)
 -  [ ] Wichtige Personen und Links (ca 5 Elemente)

@@ -1,0 +1,1343 @@
+.cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
+.col-span-1 {
+  grid-column: span 1/span 1;
+}
+
+.row-span-1 {
+  grid-row: span 1/span 1;
+}
+
+@media (min-width: 576px) {
+  .sm\:cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:col-span-1 {
+    grid-column: span 1/span 1;
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:row-span-1 {
+    grid-row: span 1/span 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-1 {
+    grid-column: span 1/span 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:row-span-1 {
+    grid-row: span 1/span 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:col-span-1 {
+    grid-column: span 1/span 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:row-span-1 {
+    grid-row: span 1/span 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:col-span-1 {
+    grid-column: span 1/span 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:row-span-1 {
+    grid-row: span 1/span 1;
+  }
+}
+
+.cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.col-span-2 {
+  grid-column: span 2/span 2;
+}
+
+.row-span-2 {
+  grid-row: span 2/span 2;
+}
+
+@media (min-width: 576px) {
+  .sm\:cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:col-span-2 {
+    grid-column: span 2/span 2;
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:row-span-2 {
+    grid-row: span 2/span 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-2 {
+    grid-column: span 2/span 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:row-span-2 {
+    grid-row: span 2/span 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:col-span-2 {
+    grid-column: span 2/span 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:row-span-2 {
+    grid-row: span 2/span 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:col-span-2 {
+    grid-column: span 2/span 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:row-span-2 {
+    grid-row: span 2/span 2;
+  }
+}
+
+.cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.col-span-3 {
+  grid-column: span 3/span 3;
+}
+
+.row-span-3 {
+  grid-row: span 3/span 3;
+}
+
+@media (min-width: 576px) {
+  .sm\:cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:col-span-3 {
+    grid-column: span 3/span 3;
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:row-span-3 {
+    grid-row: span 3/span 3;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-3 {
+    grid-column: span 3/span 3;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:row-span-3 {
+    grid-row: span 3/span 3;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:col-span-3 {
+    grid-column: span 3/span 3;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:row-span-3 {
+    grid-row: span 3/span 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:col-span-3 {
+    grid-column: span 3/span 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:row-span-3 {
+    grid-row: span 3/span 3;
+  }
+}
+
+.cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.rows-4 {
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+}
+
+.col-span-4 {
+  grid-column: span 4/span 4;
+}
+
+.row-span-4 {
+  grid-row: span 4/span 4;
+}
+
+@media (min-width: 576px) {
+  .sm\:cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:col-span-4 {
+    grid-column: span 4/span 4;
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:row-span-4 {
+    grid-row: span 4/span 4;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-4 {
+    grid-column: span 4/span 4;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:row-span-4 {
+    grid-row: span 4/span 4;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:col-span-4 {
+    grid-column: span 4/span 4;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:row-span-4 {
+    grid-row: span 4/span 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:col-span-4 {
+    grid-column: span 4/span 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:row-span-4 {
+    grid-row: span 4/span 4;
+  }
+}
+
+.cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.rows-5 {
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+}
+
+.col-span-5 {
+  grid-column: span 5/span 5;
+}
+
+.row-span-5 {
+  grid-row: span 5/span 5;
+}
+
+@media (min-width: 576px) {
+  .sm\:cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:rows-5 {
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:col-span-5 {
+    grid-column: span 5/span 5;
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:row-span-5 {
+    grid-row: span 5/span 5;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:rows-5 {
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-5 {
+    grid-column: span 5/span 5;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:row-span-5 {
+    grid-row: span 5/span 5;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:rows-5 {
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:col-span-5 {
+    grid-column: span 5/span 5;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:row-span-5 {
+    grid-row: span 5/span 5;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:rows-5 {
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:col-span-5 {
+    grid-column: span 5/span 5;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:row-span-5 {
+    grid-row: span 5/span 5;
+  }
+}
+
+.cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.rows-6 {
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+}
+
+.col-span-6 {
+  grid-column: span 6/span 6;
+}
+
+.row-span-6 {
+  grid-row: span 6/span 6;
+}
+
+@media (min-width: 576px) {
+  .sm\:cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:rows-6 {
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:col-span-6 {
+    grid-column: span 6/span 6;
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:row-span-6 {
+    grid-row: span 6/span 6;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:rows-6 {
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-6 {
+    grid-column: span 6/span 6;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:row-span-6 {
+    grid-row: span 6/span 6;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:rows-6 {
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:col-span-6 {
+    grid-column: span 6/span 6;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:row-span-6 {
+    grid-row: span 6/span 6;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:rows-6 {
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:col-span-6 {
+    grid-column: span 6/span 6;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:row-span-6 {
+    grid-row: span 6/span 6;
+  }
+}
+
+.cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.rows-7 {
+  grid-template-rows: repeat(7, minmax(0, 1fr));
+}
+
+.col-span-7 {
+  grid-column: span 7/span 7;
+}
+
+.row-span-7 {
+  grid-row: span 7/span 7;
+}
+
+@media (min-width: 576px) {
+  .sm\:cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:rows-7 {
+    grid-template-rows: repeat(7, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:col-span-7 {
+    grid-column: span 7/span 7;
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:row-span-7 {
+    grid-row: span 7/span 7;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:rows-7 {
+    grid-template-rows: repeat(7, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-7 {
+    grid-column: span 7/span 7;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:row-span-7 {
+    grid-row: span 7/span 7;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:rows-7 {
+    grid-template-rows: repeat(7, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:col-span-7 {
+    grid-column: span 7/span 7;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:row-span-7 {
+    grid-row: span 7/span 7;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:rows-7 {
+    grid-template-rows: repeat(7, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:col-span-7 {
+    grid-column: span 7/span 7;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:row-span-7 {
+    grid-row: span 7/span 7;
+  }
+}
+
+.cols-8 {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.rows-8 {
+  grid-template-rows: repeat(8, minmax(0, 1fr));
+}
+
+.col-span-8 {
+  grid-column: span 8/span 8;
+}
+
+.row-span-8 {
+  grid-row: span 8/span 8;
+}
+
+@media (min-width: 576px) {
+  .sm\:cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:rows-8 {
+    grid-template-rows: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:col-span-8 {
+    grid-column: span 8/span 8;
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:row-span-8 {
+    grid-row: span 8/span 8;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:rows-8 {
+    grid-template-rows: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-8 {
+    grid-column: span 8/span 8;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:row-span-8 {
+    grid-row: span 8/span 8;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:rows-8 {
+    grid-template-rows: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:col-span-8 {
+    grid-column: span 8/span 8;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:row-span-8 {
+    grid-row: span 8/span 8;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:rows-8 {
+    grid-template-rows: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:col-span-8 {
+    grid-column: span 8/span 8;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:row-span-8 {
+    grid-row: span 8/span 8;
+  }
+}
+
+.cols-9 {
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.rows-9 {
+  grid-template-rows: repeat(9, minmax(0, 1fr));
+}
+
+.col-span-9 {
+  grid-column: span 9/span 9;
+}
+
+.row-span-9 {
+  grid-row: span 9/span 9;
+}
+
+@media (min-width: 576px) {
+  .sm\:cols-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:rows-9 {
+    grid-template-rows: repeat(9, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:col-span-9 {
+    grid-column: span 9/span 9;
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:row-span-9 {
+    grid-row: span 9/span 9;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:cols-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:rows-9 {
+    grid-template-rows: repeat(9, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-9 {
+    grid-column: span 9/span 9;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:row-span-9 {
+    grid-row: span 9/span 9;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:cols-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:rows-9 {
+    grid-template-rows: repeat(9, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:col-span-9 {
+    grid-column: span 9/span 9;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:row-span-9 {
+    grid-row: span 9/span 9;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:cols-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:rows-9 {
+    grid-template-rows: repeat(9, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:col-span-9 {
+    grid-column: span 9/span 9;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:row-span-9 {
+    grid-row: span 9/span 9;
+  }
+}
+
+.cols-10 {
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+
+.rows-10 {
+  grid-template-rows: repeat(10, minmax(0, 1fr));
+}
+
+.col-span-10 {
+  grid-column: span 10/span 10;
+}
+
+.row-span-10 {
+  grid-row: span 10/span 10;
+}
+
+@media (min-width: 576px) {
+  .sm\:cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:rows-10 {
+    grid-template-rows: repeat(10, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:col-span-10 {
+    grid-column: span 10/span 10;
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:row-span-10 {
+    grid-row: span 10/span 10;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:rows-10 {
+    grid-template-rows: repeat(10, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-10 {
+    grid-column: span 10/span 10;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:row-span-10 {
+    grid-row: span 10/span 10;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:rows-10 {
+    grid-template-rows: repeat(10, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:col-span-10 {
+    grid-column: span 10/span 10;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:row-span-10 {
+    grid-row: span 10/span 10;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:rows-10 {
+    grid-template-rows: repeat(10, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:col-span-10 {
+    grid-column: span 10/span 10;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:row-span-10 {
+    grid-row: span 10/span 10;
+  }
+}
+
+.cols-11 {
+  grid-template-columns: repeat(11, minmax(0, 1fr));
+}
+
+.rows-11 {
+  grid-template-rows: repeat(11, minmax(0, 1fr));
+}
+
+.col-span-11 {
+  grid-column: span 11/span 11;
+}
+
+.row-span-11 {
+  grid-row: span 11/span 11;
+}
+
+@media (min-width: 576px) {
+  .sm\:cols-11 {
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:rows-11 {
+    grid-template-rows: repeat(11, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:col-span-11 {
+    grid-column: span 11/span 11;
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:row-span-11 {
+    grid-row: span 11/span 11;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:cols-11 {
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:rows-11 {
+    grid-template-rows: repeat(11, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-11 {
+    grid-column: span 11/span 11;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:row-span-11 {
+    grid-row: span 11/span 11;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:cols-11 {
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:rows-11 {
+    grid-template-rows: repeat(11, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:col-span-11 {
+    grid-column: span 11/span 11;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:row-span-11 {
+    grid-row: span 11/span 11;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:cols-11 {
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:rows-11 {
+    grid-template-rows: repeat(11, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:col-span-11 {
+    grid-column: span 11/span 11;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:row-span-11 {
+    grid-row: span 11/span 11;
+  }
+}
+
+.cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.rows-12 {
+  grid-template-rows: repeat(12, minmax(0, 1fr));
+}
+
+.col-span-12 {
+  grid-column: span 12/span 12;
+}
+
+.row-span-12 {
+  grid-row: span 12/span 12;
+}
+
+@media (min-width: 576px) {
+  .sm\:cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:rows-12 {
+    grid-template-rows: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:col-span-12 {
+    grid-column: span 12/span 12;
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:row-span-12 {
+    grid-row: span 12/span 12;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:rows-12 {
+    grid-template-rows: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-12 {
+    grid-column: span 12/span 12;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:row-span-12 {
+    grid-row: span 12/span 12;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:rows-12 {
+    grid-template-rows: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:col-span-12 {
+    grid-column: span 12/span 12;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:row-span-12 {
+    grid-row: span 12/span 12;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:rows-12 {
+    grid-template-rows: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:col-span-12 {
+    grid-column: span 12/span 12;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:row-span-12 {
+    grid-row: span 12/span 12;
+  }
+}

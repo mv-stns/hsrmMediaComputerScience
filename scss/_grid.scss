@@ -1,0 +1,55 @@
+@import 'mixins';
+$gridCols: (
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+  7: 7,
+  8: 8,
+  9: 9,
+  10: 10,
+  11: 11,
+  12: 12
+);
+
+@each $cols, $col in $gridCols {
+  .cols-#{$cols} {
+    grid-template-columns: repeat(#{$cols}, minmax(0, 1fr));
+  }
+  .rows-#{$cols} {
+    grid-template-rows: repeat(#{$cols}, minmax(0, 1fr));
+  }
+  .col-span-#{$cols} {
+    grid-column: span #{$cols} / span #{$cols};
+  }
+  .row-span-#{$cols} {
+    grid-row: span #{$cols} / span #{$cols};
+  }
+  @each $bpName, $bpVal in $breakpoints {
+    .#{$bpName}\:cols-#{$cols} {
+      @include respond-to($bpName) {
+        grid-template-columns: repeat(#{$cols}, minmax(0, 1fr));
+      }
+    }
+    .#{$bpName}\:rows-#{$cols} {
+      @include respond-to($bpName) {
+        grid-template-rows: repeat(#{$cols}, minmax(0, 1fr));
+      }
+    }
+    .#{$bpName}\:col-span-#{$cols} {
+      @include respond-to($bpName) {
+        grid-column: span #{$cols} / span #{$cols};
+      }
+    }
+    .#{$bpName}\:row-span-#{$cols} {
+      @include respond-to($bpName) {
+        grid-row: span #{$cols} / span #{$cols};
+      }
+    }
+  }
+}
+
+
+

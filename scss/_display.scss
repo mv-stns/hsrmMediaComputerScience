@@ -4,6 +4,7 @@ $displayTypes: (
   block,
   inline-block,
   inline,
+  grid,
   none,
 );
 
@@ -52,6 +53,8 @@ $alignItems: (
   flex-end,
   center,
   baseline,
+  start,
+  end,
 );
 
 $alignContent: (
@@ -61,6 +64,9 @@ $alignContent: (
   center,
   space-between,
   space-around,
+  space-evenly,
+  start,
+  end,
 );
 
 $alignSelf: (
