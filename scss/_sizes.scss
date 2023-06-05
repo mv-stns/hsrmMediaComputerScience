@@ -2,7 +2,7 @@
 
 $sizes: ();
 
-@for $i from 1 through 96 {
+@for $i from 1 through 64 {
   $sizes: map-merge(
     $sizes,
     (

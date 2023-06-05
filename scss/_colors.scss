@@ -15,7 +15,6 @@ $colors: (
 
 $primary: map-get($colors, "primary");
 
-//create bg, text, and border colors for each color in the $colors map
 @each $color, $value in $colors {
   .bg-#{$color} {
     background-color: $value;

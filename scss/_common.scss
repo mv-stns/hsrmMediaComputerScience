@@ -39,3 +39,7 @@ body {
 section {
   @extend .py-10, .px-3;
 }
+
+* {
+  @extend .text-gray-800;
+}

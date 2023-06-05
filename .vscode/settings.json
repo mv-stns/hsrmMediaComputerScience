@@ -5,11 +5,6 @@
           "format": "compressed",
           "savePath": "~/../css"
       },
-      {
-          "extensionName": ".css",
-          "format": "expanded",
-          "savePath": "~/../css"
-      }
   ],
   "liveSassCompile.settings.generateMap": false,
   "liveSassCompile.settings.autoprefix": ["defaults"],

@@ -1,7 +1,6 @@
 // Charset für Umlaute und Sonderzeichen im CSS
 @charset "UTF-8";
 
-// reset
 @import "_reset.scss";
 
 @import "_typography.scss";
@@ -13,3 +12,4 @@
 
 @import "_links.scss";
 @import "_common.scss";
+@import "_table.scss";
